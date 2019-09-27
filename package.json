@@ -1,0 +1,15 @@
+{
+  "name": "cloud-admin-site",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.1.0"
+  }
+}
