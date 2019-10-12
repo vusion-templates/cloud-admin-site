@@ -22,6 +22,7 @@ module.exports = {
                 '/guide/essentials/nav.md',
                 '/guide/essentials/new.md',
                 '/guide/essentials/service.md',
+                '/guide/essentials/mock.md',
                 '/guide/essentials/scripts.md',
                 '/guide/essentials/build.md',
             ],

@@ -2,7 +2,7 @@
 
 接口处理通常情况下，是一件很简单的问题，但是很多时候，会把其变得很复杂，无法维护。
 
-这里设计了一套方案来约束接口的使用。接口信息默认放在相关联的模块下面，不推荐放在全局。
+这里设计了一套方案 [request-pre](https://github.com/zhangsanshi/request-pre) 来约束接口的使用。接口信息默认放在相关联的模块下面，不推荐放在全局。
 
 :::tip
 真正发送接口的时候，还是通过 `axios` 发送的。
@@ -72,17 +72,19 @@ export default {
 ```javascript
 import services from './service';
 service.detail({
-    path: {
-        id: 1, // 路径支持参数
-    },
-    query: {
-        other: 2,
-    },
-    body: {
-        desc: 4,
-    },
-    headers: {
-        // 可以定义 headers
+    url: {
+        path: {
+            id: 1, // 路径支持参数
+        },
+        query: {
+            other: 2,
+        },
+        body: {
+            desc: 4,
+        },
+        headers: {
+            // 可以定义 headers
+        },
     },
     config: {
         // 可以定义各种 config，用于下载或者其他用途
