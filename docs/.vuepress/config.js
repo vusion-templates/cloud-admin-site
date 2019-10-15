@@ -35,6 +35,7 @@ module.exports = {
                 '/guide/advanced/chart.md',
                 '/guide/advanced/themes.md',
                 '/guide/advanced/eslint.md',
+                '/guide/advanced/test.md',
                 '/guide/advanced/git-hooks.md',
             ],
         },],

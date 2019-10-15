@@ -37,3 +37,12 @@ npm run dll
 :::tip
 请注意保持 `vue` 和 `vue-template-compiler` 版本的一致性，不一致会产生一些意料之外的问题。
 :::
+
+## test:unit
+
+会运行 `tests` 目录的测试脚本。
+
+```shell
+npm run test:unit
+npm run test:unit:watch // dev
+```
