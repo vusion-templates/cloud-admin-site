@@ -6,6 +6,30 @@ module.exports = {
     themeConfig: {
         nav: [
             {
+                text: '功能',
+                items: [
+                    {
+                      text: 'Component',
+                      textES: 'Componente',
+                      textZH: '组件',
+                      items: [
+                        {
+                          text: '富文本编辑器',
+                          link: '/feature/component/rich-editor.md'
+                        },
+                        {
+                          text: 'Markdown 编辑器',
+                          link: '/feature/component/markdown-editor.md'
+                        },
+                        {
+                          text: '代码编辑器',
+                          link: '/feature/component/code-editor.md'
+                        }
+                      ]
+                    }
+                  ],
+            },
+            {
                 text: 'Github',
                 link: 'https://github.com/vusion/cloud-admin'
               },
