@@ -1,7 +1,19 @@
 # 图表
 
-对于简单的图表可以使用组件库自带的。同时组件库封装了 ECharts 用于复杂图表的使用 [x-echarts](https://vusion.github.io/cloud-ui/vendor/x-echarts)。
+对于简单的图表可以使用[组件库自带](https://vusion.github.io/cloud-ui/components/u-bar-chart)的。对于复杂的图表，推荐使用 [ECharts](https://www.echartsjs.com/zh/index.html)。
+
+## ECharts & vue
+
+底层封装可见 [vue-echarts](https://github.com/ecomfe/vue-echarts)。
 
 ## 使用
 
-这里推荐组件库的引用方式，采用懒加载的方式，ECharts 之类的库一般较大。
+参考 `src/views/dashboard/demo/echarts/components/u-echarts.js` 即可。注意：用到相关的图表，需要手动引入对应的资源！
+
+## online
+
+[Echarts](https://vusion-templates.github.io/cloud-admin/#/chart/echarts)
+
+:::tip
+在使用 `vue-cli3` 的情况下，可能会遇到默认配置把 `node_modules` 中的文件排除在 `Babel` 转译范围以外的问题。参见[链接](https://github.com/ecomfe/vue-echarts#importing-the-source-version)。本项目已经处理。
+:::
