@@ -64,9 +64,8 @@
 │   │   └── utils # 全局工具方法
 │   │       ├── services # 请求基础方法
 │   │       │   └── index.js
-│   │       ├── storage # localStorage 定义
-│   │       │   └── localStorage.js
-│   │       └── wrapComponent.js # 子页面通用占位
+│   │       └── storage # localStorage 定义
+│   │           └── localStorage.js
 │   ├── static # 静态资源
 │   ├── templates # 后台模板
 │   │   ├── index.html # 首页
