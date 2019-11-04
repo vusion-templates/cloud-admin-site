@@ -2,6 +2,14 @@
 
 [cloud-admin](https://github.com/vusion/cloud-admin) 是一套开箱即用的中台前端解决方案，它基于 [vue](https://github.com/vuejs/vue) 和 [cloud-ui](https://github.com/vusion/cloud-ui) 实现。本项目借助于 cloud-ui 组件库，提供了丰富的组件功能，另外，基于团队对中台项目多年实践经验的积累，内置了一大批业务模型。
 
+:::tip
+很多时候，项目用不到代码编辑器等功能，这里提供了一个精简版本的模板库，方便二次开发。
+
++ 集成方案 [cloud-admin](https://github.com/vusion/cloud-admin)
++ 基础模板 [cloud-admin-template](https://github.com/vusion-templates/cloud-admin-template)
+
+:::
+
 ## 功能
 
 ```
@@ -18,6 +26,8 @@
   - 500
 - 编辑器
   - JSON 等多格式
+  - 富文本编辑器
+  - Markdown 编辑器
 - ECharts 图表
 - Dashboard
 ```
