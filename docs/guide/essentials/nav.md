@@ -18,4 +18,4 @@
 
 ## 头部导航
 
-同时支持头部导航，由于头部导航一般较为简单，在 `src/views/dashboard/index.vue` 定义即可。
+同时支持头部导航，由于头部导航一般较为简单，在 `src/views/dashboard/layout/views/index.vue` 定义即可。

@@ -4,7 +4,7 @@
 
 ## 引用方式
 
-`vue-element-admin` 未提供通过代码直接引用的方案（目前是异步加载 `CDN` 的引入方式），`cloud-admin` 通过研究解决了此问题，相关描述如下。可以在 `src/views/dashboard/demo/editor/components/u-tinymce.js` 查看具体实现。
+`vue-element-admin` 未提供通过代码直接引用的方案（目前是异步加载 `CDN` 的引入方式），`cloud-admin` 通过研究解决了此问题，相关描述如下。可以在 `src/views/dashboard/demo/editors/components/u-tinymce.js` 查看具体实现。
 
 ### 难点
 

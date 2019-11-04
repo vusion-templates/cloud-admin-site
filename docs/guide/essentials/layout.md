@@ -10,8 +10,7 @@
 
 ## 网页标题
 
-在`app.config.js`中可以设置网站标题，通过路由的`meta`的`title`属性可以设置子标题。默认的格式为`子页面 - 网站标题`。
-
+在 `app.config.js` 中可以设置网站标题，通过路由的 `meta` 的 `title` 属性可以设置子标题。默认的格式为 `子页面 - 网站标题`。
 
 ```javascript
 meta: {
@@ -21,11 +20,9 @@ meta: {
 
 ## 面包屑
 
-部分情况下，我们需要借助面包屑进行导航。在设置`meta`的`title`属性的情况下就会自动添加面包屑导航。
+部分情况下，我们需要借助面包屑进行导航。在设置 `meta` 的 `crumb` 属性的情况下就会自动添加面包屑导航。
 
-也可以通过在路由的 `meta` 属性中设置 `crumb`处理更复杂的需求。
-
-具体文件可查看 `src/views/dashboard/index.vue/components/s-crumb.vue`
+具体文件可查看 `src/views/dashboard/layout/components/s-crumb.vue`
 
 ```javascript
 meta: {
@@ -40,6 +37,7 @@ meta: {
     //         to: '/overview',
     //     };
     // },
+    // crumb: '首页',
 },
 
 ```

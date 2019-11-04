@@ -8,7 +8,7 @@
 
 ## 使用
 
-参考 `src/views/dashboard/demo/echarts/components/u-echarts.js` 即可。注意：用到相关的图表，需要手动引入对应的资源！
+参考 `src/views/dashboard/demo/views/charts/components/x-echarts.js` 即可。注意：用到相关的图表，需要手动引入对应的资源！
 
 ## online
 
