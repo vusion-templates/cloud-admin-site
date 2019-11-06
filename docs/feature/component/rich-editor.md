@@ -20,4 +20,4 @@
 
 ## online
 
-[rich-editor](https://vusion-templates.github.io/cloud-admin/#/editor/rich-editor)
+[rich-editor](https://vusion-templates.github.io/cloud-admin/#/demo/editors/rich-editor)

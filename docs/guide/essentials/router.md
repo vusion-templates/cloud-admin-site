@@ -2,7 +2,7 @@
 
 ## 配置项
 
-基础配置可以查看 [Vue Router](https://router.vuejs.org/)。推荐所有的路由都定义 `name` 属性，很多时候我们根据 `name`，而不是链接去确认一个路由。
+基础配置可以查看 [Vue Router](https://router.vuejs.org/)。推荐所有的路由都定义 `name` 属性，很多时候我们根据 `name` 而不是链接去确认一个路由。
 
 ```javascript
 {

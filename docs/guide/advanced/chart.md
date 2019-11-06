@@ -12,7 +12,7 @@
 
 ## online
 
-[Echarts](https://vusion-templates.github.io/cloud-admin/#/chart/echarts)
+[Echarts](https://vusion-templates.github.io/cloud-admin/#/demo/charts/echarts)
 
 :::tip
 在使用 `vue-cli3` 的情况下，可能会遇到默认配置把 `node_modules` 中的文件排除在 `Babel` 转译范围以外的问题。参见[链接](https://github.com/ecomfe/vue-echarts#importing-the-source-version)。本项目已经处理。

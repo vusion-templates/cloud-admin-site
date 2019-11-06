@@ -8,21 +8,13 @@
 
 ### brace 使用
 
-如果需要使用不同的语言以及主题。记得要修改如下引用：
+如果需要使用不同的语言以及主题。记得要修改 `src/views/dashboard/demo/views/editors/components/u-brace.js` 文件的如下引用：
 
 ```js
-{
-    components: {
-        XAceEditor: () => Promise.all([
-            import(/* webpackChunkName: "brace" */ '@cloud-ui/x-ace-editor.vue'),
-            import(/* webpackChunkName: "brace" */ 'brace/mode/javascript'),
-            import(/* webpackChunkName: "brace" */ 'brace/theme/monokai'),
-        ]).then(([component]) => {
-            libLoad.status = true;
-            return component;
-        }),
-    },
-}
+import XAceEditor from '@cloud-ui/x-ace-editor.vue';
+import 'brace/mode/javascript';
+import 'brace/theme/monokai';
+export default XAceEditor;
 ```
 
 ### brace & vue
@@ -35,7 +27,7 @@
 
 ### monaco 使用
 
-如果需要使用不同的语言以及主题，会稍微麻烦点。在此文件 `vue.config.js` 添加相关逻辑，并且重启命令。
+如果需要使用不同的语言以及主题，会稍微麻烦点。在 `vue.config.js` 文件添加相关逻辑，并且重启项目开发环境。
 
 ```js
 config.plugin('monaco-editor').use(require('monaco-editor-webpack-plugin'), [{
@@ -57,4 +49,4 @@ config.plugin('monaco-editor').use(require('monaco-editor-webpack-plugin'), [{
 
 ## online
 
-[code-editor](https://vusion-templates.github.io/cloud-admin/#/editor/code/monaco)
+[code-editor](https://vusion-templates.github.io/cloud-admin/#/demo/editors/code/monaco)

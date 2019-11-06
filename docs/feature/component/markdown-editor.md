@@ -8,4 +8,4 @@
 
 ## online
 
-[markdown-editor](https://vusion-templates.github.io/cloud-admin/#/editor/markdown)
+[markdown-editor](https://vusion-templates.github.io/cloud-admin/#/demo/editors/markdown)
