@@ -24,6 +24,10 @@ module.exports = {
                         {
                           text: '代码编辑器',
                           link: '/feature/component/code-editor.md'
+                        },
+                        {
+                          text: 'Pagination 分页',
+                          link: '/feature/component/pagination.md'
                         }
                       ]
                     }
