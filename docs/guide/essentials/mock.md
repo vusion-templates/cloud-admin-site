@@ -41,38 +41,34 @@ export default {
 ```javascript
 import services from './service';
 service.detail({
-    url: {
-        path: {
-            // ...
-        },
-        query: {
-            // ...
-        },
-        body: {
-            // ...
-        },
-        headers: {
-            // ...
-        },
+    path: {
+        // ...
+    },
+    query: {
+        // ...
+    },
+    body: {
+        // ...
+    },
+    headers: {
+        // ...
     },
     config: {
         mock: 'success',
     },
 });
 service.detail({
-    url: {
-        path: {
-            // ...
-        },
-        query: {
-            // ...
-        },
-        body: {
-            // ...
-        },
-        headers: {
-            // ...
-        },
+    path: {
+        // ...
+    },
+    query: {
+        // ...
+    },
+    body: {
+        // ...
+    },
+    headers: {
+        // ...
     },
     config: {
         mock: 'fail',

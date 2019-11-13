@@ -72,19 +72,17 @@ export default {
 ```javascript
 import services from './service';
 service.detail({
-    url: {
-        path: {
-            id: 1, // 路径支持参数
-        },
-        query: {
-            other: 2,
-        },
-        body: {
-            desc: 4,
-        },
-        headers: {
-            // 可以定义 headers
-        },
+    path: {
+        id: 1, // 路径支持参数
+    },
+    query: {
+        other: 2,
+    },
+    body: {
+        desc: 4,
+    },
+    headers: {
+        // 可以定义 headers
     },
     config: {
         // 可以定义各种 config，用于下载或者其他用途
