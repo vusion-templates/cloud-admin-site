@@ -8,7 +8,7 @@
 
 ### brace 使用
 
-如果需要使用不同的语言以及主题。记得要修改 `src/views/dashboard/demo/views/editors/components/u-brace.js` 文件的如下引用：
+如果需要使用不同的语言以及主题，需要修改 `src/views/dashboard/demo/views/editors/components/u-brace.js` 文件的如下引用：
 
 ```js
 import XAceEditor from '@cloud-ui/x-ace-editor.vue';

@@ -17,27 +17,32 @@ import apis from './apis';
 const service = createService(apis, {
     config: {
         baseURL: 'https://api.apiopen.top/',
-    },
+    }, // 可省略
     url: {
-        path: '/message/add/{id}', // 支持变量，请求的路径
-        method: 'post', // 请求方法
         body: {
             content: 'message',
-        }, // 请求 body 部分
+        }, // 请求 body 部分，可省略
         headers: {
             xsrf: 'xsrf',
-        }, // 请求 header 部分
+        }, // 请求 header 部分，可省略
         query: {
             search: 'A',
-        }, // 请求的 search 部分
+        }, // 请求的 search 部分，可省略
     }, // 这里最多只需要定义 headers、config，一般情况下，其他的都不需要
 });
+
+// 下面是一个例子，一般情况下，无需写以下代码
+// 如果对 detail 方法的返回结果有特殊处理，可以覆写暴露出去的 detail 方法。
+// 但不允许覆写 $detail 方法，同时也不建议外部调用 $detail 方法。
 console.log(service.detail === service.$detail); // true
-// 可以覆写暴露出去的 detail 方法，但不允许覆写 $detail 方法，同时也不允许外部调用 $detail 方法
 service.detail = function (...args) {
-    return service.$detail(...args).then();
+    return service.$detail(...args).then((result) => {
+        // 特殊处理
+        return result;
+    });
 };
 console.log(service.detail === service.$detail); // false
+
 export default service;
 ```
 
@@ -52,17 +57,17 @@ export default {
             method: 'post', // 请求方法
             body: {
                 content: 'message',
-            }, // 请求 body 部分
+            }, // 请求 body 部分，可省略
             headers: {
                 xsrf: 'xsrf',
-            }, // 请求 header 部分
+            }, // 请求 header 部分，可省略
             query: {
                 search: 'A',
-            }, // 请求的 search 部分
+            }, // 请求的 search 部分，可省略
         },
         config: {
             baseURL: 'https://otherurl.com', // axios 使用，请求的域名，一般不需要写，跨域需要
-        },
+        }, // 可省略
     },
 };
 ```
@@ -74,19 +79,19 @@ import services from './service';
 service.detail({
     path: {
         id: 1, // 路径支持参数
-    },
+    }, // 可省略
     query: {
         other: 2,
-    },
+    }, // 可省略
     body: {
         desc: 4,
-    },
+    }, // 可省略
     headers: {
         // 可以定义 headers
-    },
+    }, // 可省略
     config: {
         // 可以定义各种 config，用于下载或者其他用途
-    },
+    }, // 可省略
 });
 ```
 
