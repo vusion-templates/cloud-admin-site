@@ -2,7 +2,7 @@
 
 ## 配置项
 
-基础配置可以查看 [Vue Router](https://router.vuejs.org/)。推荐所有的路由都定义 `name` 属性，很多时候我们根据 `name` 而不是链接去确认一个路由。
+基础配置可以查看 [Vue Router](https://router.vuejs.org/)。推荐必要的路由都定义 `name` 属性，很多时候我们根据 `name` 而不是链接去确认一个路由。
 
 ```javascript
 {
@@ -16,11 +16,11 @@
 
 ### meta.title
 
-[meta.title](/guide/essentials/title.html)
+更改浏览器标题[meta.title](/guide/essentials/title.html)
 
 ### meta.crumb
 
-[meta.crumb](/guide/essentials/layout.html#面包屑)
+设置面包屑[meta.crumb](/guide/essentials/layout.html#面包屑)
 
 ## 路由懒加载
 

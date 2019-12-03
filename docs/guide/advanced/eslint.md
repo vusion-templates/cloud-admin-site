@@ -30,4 +30,4 @@
 
 ## 自动修复
 
-[lint:fix](/guide/essentials/scripts.html#lint-fix)
+通过运行命令 `npm run lint:fix`，可以自动修复大部分的写法错误。具体可查看[lint:fix](/guide/essentials/scripts.html#lint-fix)

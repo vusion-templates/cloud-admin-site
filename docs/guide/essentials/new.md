@@ -57,3 +57,7 @@ export default {
 ## 侧边栏
 
 如果该模块需要在导航栏显示，那么不要忘记之前提到的[侧边栏](/guide/essentials/nav.html)
+
+## 快速添加
+
+现在(v0.2.0)可以通过运行命令 `npm run add` 添加一个模块，详情可见 [初始化模板](/guide/advanced/template.html)

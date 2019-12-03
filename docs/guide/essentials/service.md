@@ -5,7 +5,7 @@
 这里设计了一套方案 [request-pre](https://github.com/zhangsanshi/request-pre) 来约束接口的使用。接口信息默认放在相关联的模块下面，不推荐放在全局。
 
 :::tip
-真正发送接口的时候，还是通过 `axios` 发送的。
+在本项目中，真正发送接口的时候，还是通过 `axios` 发送的。
 :::
 
 ## 创建

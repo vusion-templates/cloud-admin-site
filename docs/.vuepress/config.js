@@ -52,6 +52,7 @@ module.exports = {
                 '/guide/essentials/service.md',
                 '/guide/essentials/mock.md',
                 '/guide/essentials/scripts.md',
+                '/guide/essentials/develop.md',
                 '/guide/essentials/build.md',
             ],
         }, {
@@ -65,6 +66,7 @@ module.exports = {
                 '/guide/advanced/eslint.md',
                 '/guide/advanced/test.md',
                 '/guide/advanced/git-hooks.md',
+                '/guide/advanced/template.md',
             ],
         },],
     },

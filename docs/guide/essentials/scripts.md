@@ -55,3 +55,13 @@ npm run update:ui:force // force
 npm run test:unit
 npm run test:unit:watch // dev
 ```
+
+## add
+
+用于初始化模块、全局组件。
+
+```shell
+npm run add
+```
+
+详情可见[初始化模板](/guide/advanced/template.html)

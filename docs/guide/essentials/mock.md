@@ -34,8 +34,6 @@ export default {
 };
 ```
 
-## 使用
-
 `config.mock` 设置成上面定义的 `mock` 名即可
 
 ```javascript
