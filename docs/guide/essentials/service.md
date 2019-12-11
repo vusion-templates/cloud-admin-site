@@ -104,3 +104,20 @@ service.detail({
 
 如果需要实现下载等功能，建议在 `config` 中设置 `download: true`，然后对此种类型的 `config` 进行扩展。
 :::
+
+## 注意
+
+如果需要全局性的错误处理，对 `src/global/utils/services/index.js` 作如下修改：
+
+```javascript
+req.then((data) => data.data, (e) => {
+    const rep = e.response.data || {};
+    // rep.msg 数据结构需要自行确认
+    if (rep.msg && !config.noAlert) {
+        if (UToast.show) {
+            UToast.show(rep.msg);
+        }
+    }
+    return Promise.reject(e.response.data);
+});
+```
