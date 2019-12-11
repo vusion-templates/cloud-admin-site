@@ -7,7 +7,7 @@
 即前后端仅通过接口交流，或者后端能把 `cookie` 写入前端服务所在的域名，能保留登录状态。在这种情况下，只需要修改 `webpack.dev-server.js` 文件的 `proxy` 即可。
 
 :::tip
-如有更多需求，可见 [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)。
+如有更多定制需求，可见 [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)。
 :::
 
 ```javascript
@@ -20,7 +20,6 @@ module.exports = function (publicPathPrefix) {
         host,
         port,
         open: true,
-        public: `http://${host}:${port}/index.html`,
         disableHostCheck: true,
         contentBase: __dirname,
         watchContentBase: false, // dev slow on Windows

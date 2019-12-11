@@ -65,27 +65,37 @@
 │   │   │   └── index.js
 │   │   ├── directives # 全局指令
 │   │   ├── filters # 全局 filters
-│   │   ├── lib # 第三方 lib
 │   │   ├── mixins # 全局 mixin
+│   |   |   └── page # page mixin
 │   │   ├── rules # 全局表单验证规则
 │   │   ├── styles # 全局样式
 │   │   │   ├── index.css # 基础样式（vusion.config.js 内定义的 baseCSSPath）
-│   │   │   └── theme.css # 主题样式（vusion.config.js 内定义的 globalCSSPath）
+│   │   │   ├── theme.css # 主题样式（vusion.config.js 内定义的 globalCSSPath）
 │   │   │   └── variables.css # 业务全局 css 变量
+│   │   ├── page # 页面公共方法
+│   │   │   ├── i18n.js # 加载 i18n
+│   │   │   ├── index.js # page 首页
+│   │   │   ├── library.js # 加载 ui 库
+│   │   │   ├── modules.js # 组合 modules 配置
+│   │   │   └── router.js # 路由默认处理
 │   │   └── utils # 全局工具方法
 │   │       ├── services # 请求基础方法
 │   │       │   └── index.js
 │   │       └── storage # localStorage 定义
 │   │           └── localStorage.js
 │   ├── static # 静态资源
-│   ├── templates # 后台模板
-│   │   ├── index.html # 首页
-│   │   └── login.html # 登录页
+│   ├── pages # 后台模板
+│   │   ├── dashboard.html # 首页
+|   |   └── favicon.ico # 图标
 │   └── views # views 所有页面
 ├── tests # 测试
+├── ui # UI 库独立打包目录，用于加速构建
+├── pages.json # 页面配置
+├── plopfile.js # plop 脚本
 ├── tsconfig.json # tsconfig.json
 ├── vue.config.js # vue-cli 配置
 ├── vusion.config.js # vusion 配置
+└── webpack.dev-server.js # webpack dev server
 └── webpack.dll.config.js # webpack dll
 ```
 

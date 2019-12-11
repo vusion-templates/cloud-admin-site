@@ -27,3 +27,9 @@ npm run add
 如果需要在侧边栏显示，可修改文件 `src/views/dashboard/modules.order.js`。
 
 如果需要修改模块在侧边栏的显示文案，可修改 `[module]/module/base.js`，详细信息可点此 [导航-侧边栏](/guide/essentials/nav.html#侧边栏) 查看。
+
+### page
+
+负责初始化新页面，会在 `src/views` 目录创建新的目录，在 `src/pages` 添加新页面文件，同时添加相关配置至 `pages.json`。
+
+初始化完成后，需要停止当前的 `dev server`，并重新启动，再访问相关的 `html` 路径即可查看最新的页面。
