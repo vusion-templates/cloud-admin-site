@@ -45,3 +45,26 @@ meta: {
 ::: tip
 面包屑信息配置，具体可见 [u-crumb](https://vusion.github.io/cloud-ui/components/u-crumb)
 :::
+
+## 自定义面包屑
+
+有些时候，会有自定义面包屑的需求，在这里我们通过以下方式去定制面包屑
+
+```javascript
+import { MPublisher } from 'cloud-ui.vusion';
+export default {
+    mixins: [MPublisher],
+    created() {
+        this.$publish('custom.crumb', [
+            {
+                title: 'test1',
+                to: '/test1',
+            },
+            {
+                title: 'test2',
+                to: '/test2',
+            }
+        ]);
+    },
+};
+```

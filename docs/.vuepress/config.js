@@ -54,6 +54,7 @@ module.exports = {
                 '/guide/essentials/scripts.md',
                 '/guide/essentials/develop.md',
                 '/guide/essentials/build.md',
+                '/guide/essentials/suggest.md',
             ],
         }, {
             title: '进阶',
