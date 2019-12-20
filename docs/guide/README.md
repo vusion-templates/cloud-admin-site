@@ -6,7 +6,7 @@
 很多时候，项目用不到代码编辑器等功能，这里提供了一个精简版本的模板库，方便二次开发。
 
 + 集成方案 [cloud-admin](https://github.com/vusion/cloud-admin)
-+ 基础模板 [cloud-admin-template](https://github.com/vusion-templates/cloud-admin-template)
++ 基础模板 [cloud-admin-lite](https://github.com/vusion-templates/cloud-admin-lite)
 
 :::
 
