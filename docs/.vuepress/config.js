@@ -43,6 +43,7 @@ module.exports = {
             collapsable: false,
             children: [
                 '/guide/',
+                '/guide/essentials/suggest.md',
                 '/guide/essentials/layout.md',
                 '/guide/essentials/style.md',
                 '/guide/essentials/title.md',
@@ -54,7 +55,6 @@ module.exports = {
                 '/guide/essentials/scripts.md',
                 '/guide/essentials/develop.md',
                 '/guide/essentials/build.md',
-                '/guide/essentials/suggest.md',
             ],
         }, {
             title: '进阶',

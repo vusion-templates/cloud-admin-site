@@ -2,7 +2,7 @@
 
 为了方便大家快速上手，这里有个推荐阅读顺序。
 
-+ [介绍](/guide/)
++ [GUI 模式](/guide/essentials/scripts.html#ui)
 + [新增](/guide/essentials/new.html)
 + [导航](/guide/essentials/nav.html)
 + [路由](/guide/essentials/router.html)
