@@ -1,4 +1,4 @@
-import message from './message';
+import { message, init } from './message';
 export default ({
   Vue, // the version of Vue being used in the VuePress app
   options, // the options for the root Vue instance
@@ -10,6 +10,9 @@ export default ({
       return {
         message,
       };
+    },
+    mounted() {
+      init();
     },
     watch: {
       'message.route'(route) {
