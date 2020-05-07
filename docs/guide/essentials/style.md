@@ -8,7 +8,7 @@
 
 + 选择器复杂 —— 为了避免上面的问题，我们在编写样式的时候不得不小心翼翼，类名里会带上限制范围的标示，变得越来越长，多人开发时还很容易导致命名风格混乱，一个元素上使用的选择器个数也可能越来越多，最终导致难以维护。
 
-同时为了解决上述问题，社区也提出了很多方案。在这里，采用的是 [CSS Modules](https://github.com/css-modules/css-modules) 和 [PostCss](https://github.com/postcss/postcss) 配合方案。
+同时为了解决上述问题，社区也提出了很多方案。在这里采用的是 [CSS Modules](https://github.com/css-modules/css-modules) 和 [PostCss](https://github.com/postcss/postcss) 配合方案。
 
 ```css
 /* 编译前 */
@@ -30,7 +30,7 @@
 
 ## 更改组件库主题样式
 
-通过在 `vusion.config.js` 定义 `globalCSSPath: "src/global/styles/theme.css"`，再修改相关变量，即可更改组件库主题样式。
+通过在 `vusion.config.js` 定义 `globalCSSPath: "src/global/styles/theme.css"`，再修改相关变量配置，即可更改组件库主题样式。
 
 ## 修改组件库的样式
 
@@ -57,7 +57,7 @@ export default {
 
 ## 业务全局 CSS 变量
 
-在 `src/global/styles/variables.css` 此文件定义即可。会随着 `globalCSSPath` 一起注入到每个 css 文件中。
+在 `src/global/styles/theme.css` 此文件定义即可。会随着 `globalCSSPath` 一起注入到每个 css 文件中。
 
 ## browserslist
 

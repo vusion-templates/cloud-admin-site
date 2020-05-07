@@ -60,4 +60,4 @@ export default {
 
 ## 快速添加
 
-现在(v0.2.0)可以通过运行命令 `npm run add` 添加一个模块，详情可见 [初始化模板](/guide/advanced/template.html)
+现在(v0.2.0)可以通过运行命令 `npm run manage` 添加一个模块，详情可见 [初始化模板](/guide/advanced/template.html)

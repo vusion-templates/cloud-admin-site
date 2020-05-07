@@ -1,6 +1,6 @@
 # 主题
 
-`cloud-ui` 支持三套皮肤，如果没有特殊的需求，我们可以在三套皮肤的基础上做一些修改。
+`cloud-ui` 采用 `css variables` 的方式实现主体的定制，支持的变量可在  `theme.css`[https://github.com/vusion/cloud-ui/blob/master/src/styles/theme.css] 查看。
 
 ## 更换主题
 

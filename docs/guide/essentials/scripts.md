@@ -38,15 +38,6 @@ npm run dll
 请注意保持 `vue` 和 `vue-template-compiler` 版本的一致性，不一致会产生一些意料之外的问题。
 :::
 
-## update:ui
-
-我们发现每次打包时， `cloud-ui` 库都会花费一定的时间。但实际上我们只需要在每次版本更新时，打包即可，平时不需要进行打包。这里提供了手动打包 `cloud-ui` 的方案。
-
-```shell
-npm run update:ui
-npm run update:ui:force // force
-```
-
 ## test:unit
 
 会运行 `tests` 目录的测试脚本。
@@ -56,12 +47,12 @@ npm run test:unit
 npm run test:unit:watch // dev
 ```
 
-## add
+## plop
 
 用于初始化模块、全局组件。
 
 ```shell
-npm run add
+npm run manage
 ```
 
 详情可见[初始化模板](/guide/advanced/template.html)

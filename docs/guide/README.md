@@ -59,22 +59,21 @@
 │   │   │   │   │   ├── assets
 │   │   │   │   │   │   └── notice.svg
 │   │   │   │   │   └── index.vue
-│   │   │   │   ├── index.js
 │   │   │   ├── common # 业务组件
-│   │   │   │   ├── index.js
 │   │   │   └── index.js
 │   │   ├── directives # 全局指令
 │   │   ├── filters # 全局 filters
 │   │   ├── mixins # 全局 mixin
-│   |   |   └── page # page mixin
+│   |   |   ├── modal # 模态框 mixin
+│   |   |   ├── page # 列表页 mixin
+│   |   |   └── load # 请求状态 mixin
 │   │   ├── rules # 全局表单验证规则
 │   │   ├── styles # 全局样式
 │   │   │   ├── index.css # 基础样式（vusion.config.js 内定义的 baseCSSPath）
-│   │   │   ├── theme.css # 主题样式（vusion.config.js 内定义的 globalCSSPath）
-│   │   │   └── variables.css # 业务全局 css 变量
+│   │   │   └── theme.css # 主题样式（vusion.config.js 内定义的 globalCSSPath）
 │   │   ├── page # 页面公共方法
 │   │   │   ├── i18n.js # 加载 i18n
-│   │   │   ├── index.js # page 首页
+│   │   │   ├── index.js # page 公共初始化
 │   │   │   ├── library.js # 加载 ui 库
 │   │   │   ├── modules.js # 组合 modules 配置
 │   │   │   └── router.js # 路由默认处理
@@ -89,9 +88,11 @@
 |   |   └── favicon.ico # 图标
 │   └── views # views 所有页面
 ├── tests # 测试
-├── ui # UI 库独立打包目录，用于加速构建
+├── plop # plop脚本
 ├── pages.json # 页面配置
-├── plopfile.js # plop 脚本
+├── webpack # webpack 脚本配置
+├── micro.config.json # 微前端配置
+├── plopfile.js # plop 脚本配置
 ├── tsconfig.json # tsconfig.json
 ├── vue.config.js # vue-cli 配置
 ├── vusion.config.js # vusion 配置
@@ -106,7 +107,7 @@
 git clone https://github.com/vusion/cloud-admin.git
 
 # 进入项目目录
-cd cloud-admin
+cd cloud-admins
 
 # 安装依赖
 npm install --registry=https://registry.npm.taobao.org
@@ -115,7 +116,7 @@ npm install --registry=https://registry.npm.taobao.org
 npm run dev
 ```
 
-启动完成后打开浏览器访问 [http://localhost:8810](http://localhost:8810) 即可。
+启动完成后打开浏览器访问 [http://localhost:8830](http://localhost:8830) 即可。
 
 ## Contribution
 

@@ -37,4 +37,4 @@ export default {
 
 ## 更多
 
-可查看 [i-icon](https://vusion.github.io/proto-ui/components/i-icon) 文档
+可查看 [i-icon](http://github.com/vusion/icon-sets) 文档

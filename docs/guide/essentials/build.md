@@ -26,7 +26,7 @@ npm run build
 
 ## 环境变量
 
-所有测试环境或者正式环境变量的配置都在 `.env.development` 等 `.env.xxxx` 文件中。通过调用命令的时候使用 `--mode xxx` 来使不同的配置文件生效。`development` 和 `production` 不需要。
+所有测试环境或者正式环境变量的配置都在 `.env.development` 等 `.env.xxxx` 文件中。通过调用命令的时候使用 `--mode xxx` 来使不同的配置文件生效，`development` 和 `production` 默认会使用该项配置。
 
 :::tip
 环境变量必须以 `VUE_APP_` 为开头。如: `VUE_APP_API`、`VUE_APP_TITLE`，它们都会通过 `webpack.DefinePlugin` 插件注入到全局。
